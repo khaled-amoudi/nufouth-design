@@ -21,6 +21,14 @@
     />
   </head>
   <body>
+    <a
+      href="https://api.whatsapp.com/send?phone=+966562444411"
+      class="whatsapp_float d-flex align-items-center justify-content-center"
+      target="_blank"
+    >
+      <i class="fab fa-whatsapp fa-2x"></i>
+    </a>
+
     <nav class="navbar navbar-expand-sm">
       <div class="container">
         <a class="navbar-brand" href="#">
@@ -62,26 +70,60 @@
             <a class="nav-link fs-7 text-white" href="index.html">اتصل بنا</a>
           </div>
         </div>
-        <div class="d-flex">
+        <!-- <div class="d-flex">
           <a href="#" class="nav-link text-white" id="changeLang">
             <i class="fa-solid fa-globe"></i>
           </a>
+        </div> -->
+        <div class="d-flex">
+          <div class="dropdown">
+            <button
+              class="btn btn-link text-white dropdown-toggle"
+              type="button"
+              id="languageDropdown"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="fa-solid fa-globe mx-2"></i>
+            </button>
+            <ul
+              class="dropdown-menu dropdown-menu-start py-0 rounded-0"
+              aria-labelledby="languageDropdown"
+            >
+              <li>
+                <a class="dropdown-item py-3" href="#">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/1200px-Flag_of_Saudi_Arabia.svg.png"
+                    width="20px"
+                    alt="saudi arabia flag"
+                    class="me-2"
+                  />
+                  <span>العربية</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item py-3" href="#">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1200px-Flag_of_the_United_States.svg.png"
+                    width="20px"
+                    alt="america flag"
+                    class="me-2"
+                  />
+                  <span>English</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
 
     <main class="main_section">
-      <div class="container pt-3 pb-5 position-relative">
-        <div class="bg-blob position-absolute d-none d-md-block" style="right: 0%; top: 0%">
-          <img
-            src="images/blobs/blob3.svg"
-            width="260px"
-            height="260px"
-            class="blob-graph"
-            alt=""
-          />
-        </div>
-        <div class="bg-blob position-absolute d-none d-md-block" style="right: 65%; top: 0%">
+      <div class="container pt-3 pb-5 mb-4 position-relative">
+        <div
+          class="bg-blob position-absolute d-none d-md-block"
+          style="right: 0%; top: 0%"
+        >
           <img
             src="images/blobs/blob5.svg"
             width="260px"
@@ -90,7 +132,22 @@
             alt=""
           />
         </div>
-        <div class="bg-blob position-absolute d-none d-md-block" style="right: 50%; bottom: -12%">
+        <div
+          class="bg-blob position-absolute d-none d-md-block"
+          style="right: 65%; top: 0%"
+        >
+          <img
+            src="images/blobs/blob5.svg"
+            width="260px"
+            height="260px"
+            class="blob-graph"
+            alt=""
+          />
+        </div>
+        <div
+          class="bg-blob position-absolute d-none d-md-block"
+          style="right: 50%; bottom: -12%"
+        >
           <img
             src="images/blobs/blob5.svg"
             width="260px"
@@ -102,27 +159,21 @@
         <div class="row">
           <div class="col-12 text-center my-5 py-3 map-title">
             <!-- Add mb-0 class here -->
-            <h2 style="color: #5b5b5b" class="fw-bolder">
-              مع <span class="text-main nufouth-text">نفوذي</span>... عقارك أقرب مما تتخيل!
-            </h2>
+            <!-- <h2 style="color: #5b5b5b" class="fw-bolder">
+              مع <span class="text-main">نفوذي</span>... عقارك أقرب مما تتخيل!
+            </h2> -->
+            <div
+              class="d-inline-block text-main-dark text-shadow"
+              style="
+                font-size: 35px;
+                font-weight: 700;
+              "
+            >
+              مع نفوذي ... عقارك أقرب مما تتخيل!
+            </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-12 col-sm-6 pb-2 d-flex align-items-stretch">
-            <div
-              class="w-100 bg-white btn-container shadow text-center main-video-youtube"
-            >
-              <iframe
-                src="https://www.youtube.com/embed/MFeo9fFoqZE"
-                class="w-100 h-100"
-                style="border-radius: 5px !important"
-                title="خدمة #ادارة_الاملاك باحترافية عالية من #نفوذ_التطوير"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              ></iframe>
-            </div>
-          </div>
           <div class="col-12 col-sm-6 search_cards">
             <div class="row">
               <div class="col-6 col-md-12">
@@ -141,7 +192,7 @@
                       style="background-color: rgba(0, 0, 0, 0.7)"
                     >
                       <h4
-                        class="card-title text-white fs-4"
+                        class="card-title text-white fs-4 text-shadow"
                         style="font-weight: 600"
                       >
                         بحث باستخدام الخريطة
@@ -171,7 +222,7 @@
                         style="background-color: rgba(0, 0, 0, 0.7)"
                       >
                         <h4
-                          class="card-title text-white fs-4"
+                          class="card-title text-white fs-4 text-shadow"
                           style="font-weight: 600"
                         >
                           بحث باستخدام جدول الشواغر
@@ -187,13 +238,27 @@
               </div>
             </div>
           </div>
+          <div class="col-12 col-sm-6 pb-2 d-flex align-items-stretch">
+            <div
+              class="w-100 bg-white btn-container shadow text-center main-video-youtube"
+            >
+              <iframe
+                src="https://www.youtube.com/embed/MFeo9fFoqZE"
+                class="w-100 h-100"
+                style="border-radius: 5px !important"
+                title="خدمة #ادارة_الاملاك باحترافية عالية من #نفوذ_التطوير"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
         </div>
       </div>
     </main>
 
     <section class="tabs_section overflow-hidden py-5"
-      style="background-color: #4eace314"
-    >
+      style="background-color: #4eace314">
       <div class="tabs-section container py-3">
         <div class="row">
           <div class="col-md-12 mb-3">
@@ -264,104 +329,199 @@
                 aria-labelledby="tab1-tab"
               >
                 <div
-                  class="position-absolute d-none d-md-block"
+                  class="bg-blob position-absolute d-none d-md-block"
                   data-aos="fade-down"
                   style="left: -18%; top: -35%"
                 >
                   <img
-                    src="images/shapes/donut_3d_shape (1).png"
-                    style="opacity: 0.8"
-                    width="380px"
-                    height="380px"
+                    src="images/blobs/blob5.svg"
+                    width="200px"
+                    height="200px"
+                    class="blob-graph"
                     alt=""
                   />
                 </div>
                 <div
-                  class="position-absolute d-none d-md-block"
+                  class="bg-blob position-absolute d-none d-md-block"
                   data-aos="fade-down"
                   style="right: -18%; top: -15%"
                 >
                   <img
-                    src="images/shapes/sphere_3d_shape.png"
-                    style="opacity: 0.8"
-                    width="380px"
-                    height="380px"
+                    src="images/blobs/blob5.svg"
+                    width="200px"
+                    height="200px"
+                    class="blob-graph"
                     alt=""
                   />
                 </div>
-                <div class="row gy-3">
-                  <div class="col-6 col-sm-4">
-                    <div class="card border-0 pb-3 shadow" data-aos="fade-left">
-                      <div
-                        class="card-body d-flex flex-column align-items-center"
-                      >
-                        <div class="w-50 p-4">
-                          <img
-                            src="images/Marketing.png"
-                            class="w-100"
-                            alt=""
-                          />
-                        </div>
-                        <div class="mt-2 text-center">
-                          <span class="fw-bold text-secondary"
-                            >فريق عمل متميز</span
-                          >
-                          <br />
-                          <span class="fs-8 text-secondary"
-                            >بخبرة متميزة وكفاءة عالية</span
-                          >
-                        </div>
-                      </div>
+
+                <div class="row mt-4">
+                  <div class="col-12 text-center">
+                    <div class="w-75 mx-auto">
+                      <h5 class="text-main-dark text-shadow" data-aos="fade-up" data-aos-duration="700">نفوذ التطوير للعقارات وإدارة الأملاك</h5>
+                      <p class="text-shadow" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50">حاصلة على كافة التراخيص والإعتمادات اللازمة لممارسة الأنشطة العقارية وهي شركة سعودية رائدة في مجال الخدمات العقارية بخبرة ممتدة لأكثر من 25 عاماً</p>  
                     </div>
-                  </div>
-                  <div class="col-6 col-sm-4">
-                    <div class="card border-0 pb-3 shadow" data-aos="fade-up">
-                      <div
-                        class="card-body d-flex flex-column align-items-center"
-                      >
-                        <div class="w-50 p-4">
-                          <img src="images/Laptop.png" class="w-100" alt="" />
-                        </div>
-                        <div class="mt-2 text-center">
-                          <span class="fw-bold text-secondary"
-                            >توظيف التكنولوجيا</span
-                          >
-                          <br />
-                          <span class="fs-8 text-secondary"
-                            >والأنظمة والتقنيات الحديثة</span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-6 col-sm-4">
-                    <div
-                      class="card border-0 pb-3 shadow"
-                      data-aos="fade-right"
-                    >
-                      <div
-                        class="card-body d-flex flex-column align-items-center"
-                      >
-                        <div class="w-50 p-4">
-                          <img
-                            src="images/Call Center Male.png"
-                            class="w-100"
-                            alt=""
-                          />
-                        </div>
-                        <div class="mt-2 text-center">
-                          <span class="fw-bold text-secondary"
-                            >Call Center مركز</span
-                          >
-                          <br />
-                          <span class="fs-8 text-secondary"
-                            >CRM وأنظمة إدارة العملاء</span
-                          >
-                        </div>
+                    <div class="w-75 mx-auto mt-4">
+                      <div class="d-flex justify-content-center" data-aos="fade-up" data-aos-duration="700" data-aos-delay="80">
+                        <!-- <button class="main_button text-white fw-bold">عرض المزيد</button> -->
+                        <button class="btn btn-main fs-7 px-5 py-2"><i class="fa-solid fa-file-pdf ms-2"></i>تحميل بروفايل الشركة PDF</button>
+                        <button class="btn btn-outline-main fs-7 px-5 py-2 me-2">تصفح المزيد عن الشركة</button>
                       </div>
                     </div>
                   </div>
                 </div>
+                <div class="row gy-3">
+                  <div
+                    id="carouselAboutCompany"
+                    class="carousel slide"
+                    data-bs-ride="carousel"
+                  >
+                    <div class="carousel-inner py-5">
+                      <div
+                        class="carousel-item active"
+                        data-bs-interval="10000"
+                      >
+                        <div class="row">
+                          <div class="col-3 d-flex justify-content-center">
+                            <div
+                              class="card border-0 bg-transparent w-100 cursor-pointer"
+                            >
+                              <div class="card-body px-md-4 d-flex justify-content-center align-items-center">
+                                <img src="https://res.cloudinary.com/vistaprint/images/c_scale,w_248,h_248,dpr_1.5/f_auto,q_auto/v1705580331/ideas-and-advice-prod/en-us/kool-aid/kool-aid.jpg?_i=AA" style="max-width: 200px; max-height: 200px;" alt="">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-3 d-flex justify-content-center">
+                            <div
+                              class="card border-0 bg-transparent w-100 cursor-pointer"
+                            >
+                              <div class="card-body px-md-4 d-flex justify-content-center align-items-center">
+                                <img src="https://res.cloudinary.com/vistaprint/images/c_scale,w_248,h_248,dpr_1.5/f_auto,q_auto/v1705580340/ideas-and-advice-prod/en-us/bp/bp.png?_i=AA" style="max-width: 200px; max-height: 200px;" alt="">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-3 d-flex justify-content-center">
+                            <div
+                              class="card border-0 bg-transparent w-100 cursor-pointer"
+                            >
+                              <div class="card-body px-md-4 d-flex justify-content-center align-items-center">
+                                <img src="https://res.cloudinary.com/vistaprint/images/c_scale,w_248,h_248,dpr_1.5/f_auto,q_auto/v1705580322/ideas-and-advice-prod/en-us/twitter/twitter.png?_i=AA" style="max-width: 200px; max-height: 200px;" alt="">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-3 d-flex justify-content-center">
+                            <div
+                              class="card border-0 bg-transparent w-100 cursor-pointer"
+                            >
+                              <div class="card-body px-md-4 d-flex justify-content-center align-items-center">
+                                <img src="https://res.cloudinary.com/vistaprint/images/c_scale,w_248,h_248,dpr_1.5/f_auto,q_auto/v1705580325/ideas-and-advice-prod/en-us/target_142183cd7b8/target_142183cd7b8.png?_i=AA" style="max-width: 200px; max-height: 200px;" alt="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <div class="row">
+                          <div class="col-3 d-flex justify-content-center">
+                            <div
+                              class="card border-0 bg-transparent w-100 cursor-pointer"
+                            >
+                              <div class="card-body px-md-4 d-flex justify-content-center align-items-center">
+                                <img src="https://res.cloudinary.com/vistaprint/images/c_scale,w_248,h_248,dpr_1.5/f_auto,q_auto/v1705580342/ideas-and-advice-prod/en-us/apple_1421283652a/apple_1421283652a.png?_i=AA" style="max-width: 200px; max-height: 200px;" alt="">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-3 d-flex justify-content-center">
+                            <div
+                              class="card border-0 bg-transparent w-100 cursor-pointer"
+                            >
+                              <div class="card-body px-md-4 d-flex justify-content-center align-items-center">
+                                <img src="https://res.cloudinary.com/vistaprint/images/c_scale,w_248,h_248,dpr_1.5/f_auto,q_auto/v1705580337/ideas-and-advice-prod/en-us/google_142143109e8/google_142143109e8.png?_i=AA" style="max-width: 200px; max-height: 200px;" alt="">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-3 d-flex justify-content-center">
+                            <div
+                              class="card border-0 bg-transparent w-100 cursor-pointer"
+                            >
+                              <div class="card-body px-md-4 d-flex justify-content-center align-items-center">
+                                <img src="https://res.cloudinary.com/vistaprint/images/c_scale,w_248,h_248,dpr_1.5/f_auto,q_auto/v1705580338/ideas-and-advice-prod/en-us/coca-cola/coca-cola.png?_i=AA" style="max-width: 200px; max-height: 200px;" alt="">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-3 d-flex justify-content-center">
+                            <div
+                              class="card border-0 bg-transparent w-100 cursor-pointer"
+                            >
+                              <div class="card-body px-md-4 d-flex justify-content-center align-items-center">
+                                <img src="https://res.cloudinary.com/vistaprint/images/c_scale,w_248,h_248,dpr_1.5/f_auto,q_auto/v1705580321/ideas-and-advice-prod/en-us/visa/visa.png?_i=AA" style="max-width: 200px; max-height: 200px;" alt="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <div>
+                        <button
+                          class="carousel-control-next"
+                          type="button"
+                          data-bs-target="#carouselAboutCompany"
+                          data-bs-slide="next"
+                          style="all: unset"
+                        >
+                          <span
+                            class="carousel-control-next-icon"
+                            style="
+                              cursor: pointer;
+                              background-color: #4fb6fc6e;
+                              border-radius: 50px;
+                            "
+                            aria-hidden="true"
+                          ></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                      <div class="carousel-indicators">
+                        <button
+                          type="button"
+                          data-bs-target="#carouselAboutCompany"
+                          data-bs-slide-to="0"
+                          class="active"
+                          aria-current="true"
+                          aria-label="Slide 1"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselAboutCompany"
+                          data-bs-slide-to="1"
+                          aria-label="Slide 2"
+                        ></button>
+                      </div>
+                      <div>
+                        <button
+                          class="carousel-control-prev"
+                          type="button"
+                          data-bs-target="#carouselAboutCompany"
+                          data-bs-slide="prev"
+                          style="all: unset"
+                        >
+                          <span
+                            class="carousel-control-prev-icon"
+                            style="
+                              cursor: pointer;
+                              background-color: #4fb6fc6e;
+                              border-radius: 50px;
+                            "
+                            aria-hidden="true"
+                          ></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
               </div>
               <div
                 class="tab-pane tab_2 fade position-relative"
@@ -369,24 +529,29 @@
                 role="tabpanel"
                 aria-labelledby="tab2-tab"
               >
-                <div class="position-absolute d-none d-md-block" style="left: -15%; top: -10%">
+                <div
+                  class="bg-blob position-absolute d-none d-md-block"
+                  data-aos="fade-down"
+                  style="left: -15%; top: -10%"
+                >
                   <img
-                    src="images/shapes/sphere_3d_shape.png"
-                    style="opacity: 0.8"
-                    width="300px"
-                    height="300px"
+                    src="images/blobs/blob5.svg"
+                    width="200px"
+                    height="200px"
+                    class="blob-graph"
                     alt=""
                   />
                 </div>
                 <div
-                  class="position-absolute d-none d-md-block"
+                  class="bg-blob position-absolute d-none d-md-block"
+                  data-aos="fade-down"
                   style="right: -18%; bottom: -15%"
                 >
                   <img
-                    src="images/shapes/capsule_3d_shape.png"
-                    style="opacity: 0.8"
-                    width="400px"
-                    height="380px"
+                    src="images/blobs/blob5.svg"
+                    width="200px"
+                    height="200px"
+                    class="blob-graph"
                     alt=""
                   />
                 </div>
@@ -878,7 +1043,10 @@
 
     <section class="contact pb-5 my-5">
       <div class="container position-relative px-5">
-        <div class="bg-blob position-absolute d-none d-md-block" style="right: 75%; top: 0%">
+        <div
+          class="bg-blob position-absolute d-none d-md-block"
+          style="right: 75%; top: 0%"
+        >
           <img
             src="images/blobs/blob5.svg"
             width="260px"
@@ -887,7 +1055,10 @@
             alt=""
           />
         </div>
-        <div class="bg-blob position-absolute d-none d-md-block" style="right: 0%; top: 10%">
+        <div
+          class="bg-blob position-absolute d-none d-md-block"
+          style="right: 0%; top: 10%"
+        >
           <img
             src="images/blobs/blob5.svg"
             width="260px"
@@ -896,8 +1067,8 @@
             alt=""
           />
         </div>
-        <div class="text-center mb-4">
-          <h5 class="text-main-dark fw-bolder">تواصل معنا</h5>
+        <div class="text-center mb-5">
+          <h5 class="text-main-dark fw-bolder text-shadow">تواصل معنا</h5>
         </div>
         <div class="row">
           <div class="col-12 col-md-8">
@@ -964,7 +1135,7 @@
           <div class="col-12 col-md-4 d-flex align-items-center mt-5 mt-md-0">
             <div class="row g-2">
               <div class="col-6">
-                <div class="card border-0 shadow" data-aos="fade-down">
+                <div class="card border-0" data-aos="fade-up">
                   <div class="card-body text-center">
                     <div
                       class="d-flex justify-content-center align-items-center mb-2"
@@ -977,13 +1148,13 @@
                       target="_blank"
                       class="text-main-dark fs-7"
                     >
-                      إضعط هنا للدردشة
+                      +201000000000
                     </a>
                   </div>
                 </div>
               </div>
               <div class="col-6">
-                <div class="card border-0 shadow" data-aos="fade-down">
+                <div class="card border-0" data-aos="fade-up">
                   <div class="card-body text-center">
                     <div
                       class="d-flex justify-content-center align-items-center mb-2"
@@ -996,7 +1167,7 @@
                 </div>
               </div>
               <div class="col-12">
-                <div class="card border-0 shadow" data-aos="fade-right">
+                <div class="card border-0" data-aos="fade-up">
                   <div class="card-body">
                     <div
                       class="d-flex flex-column align-items-center justify-content-center cursor-pointer"
@@ -1016,7 +1187,7 @@
                 </div>
               </div>
               <div class="col-12">
-                <div class="card border-0 shadow" data-aos="fade-up">
+                <div class="card border-0" data-aos="fade-up">
                   <div class="card-body">
                     <div
                       class="d-flex justify-content-center align-items-center mb-2"
@@ -1027,21 +1198,42 @@
                       <span class="fs-7 fw-bolder text-main">عناويننا</span>
                     </div>
                     <div class="d-flex justify-content-evenly">
-                      <span class="fs-7 text-center text-main-dark">
+                      <a
+                        href="https://www.google.com/maps/search/?api=1&query=26.706131,50.103655"
+                        target="_blank"
+                        class="cursor-pointer fs-7 text-center text-main-dark"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="top"
+                        title="معاينة الموقع على الخريطة"
+                      >
                         <span class="fw-bold">الرياض</span>
                         <br />
                         الملقا
-                      </span>
-                      <span class="fs-7 text-center text-main-dark">
+                      </a>
+                      <a
+                        href="https://www.google.com/maps/search/?api=1&query=26.706131,50.103655"
+                        target="_blank"
+                        class="cursor-pointer fs-7 text-center text-main-dark"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="top"
+                        title="معاينة الموقع على الخريطة"
+                      >
                         <span class="fw-bold">جدة</span>
                         <br />
                         البغدادية
-                      </span>
-                      <span class="fs-7 text-center text-main-dark">
+                      </a>
+                      <a
+                        href="https://www.google.com/maps/search/?api=1&query=26.706131,50.103655"
+                        target="_blank"
+                        class="cursor-pointer fs-7 text-center text-main-dark"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="top"
+                        title="معاينة الموقع على الخريطة"
+                      >
                         <span class="fw-bold">الدمام</span>
                         <br />
                         المحمدية
-                      </span>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -1088,11 +1280,11 @@
                   </ul>
                 </div>
                 <div class="links col-6 col-lg-3">
-                  <h5 class="text-white mb-3">Our Services</h5>
+                  <h5 class="text-white mb-3">خدماتنا</h5>
                   <ul class="list-unstyled text-white pe-2">
-                    <li class="mb-1">- Branding</li>
-                    <li class="mb-1">- Company profile</li>
-                    <li class="mb-1">- Brochures</li>
+                    <li class="mb-1">- إدارة عقارات</li>
+                    <li class="mb-1">- تأجير وبيع</li>
+                    <li class="mb-1">- تسويق</li>
                   </ul>
                 </div>
                 <div class="links col-6 col-lg-3">
