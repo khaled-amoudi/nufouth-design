@@ -1,15 +1,18 @@
 body  {
-    font-family: "Cairo", serif;
+    /* font-family: "Cairo", serif; */
+    font-family: "Almarai", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     font-variation-settings: "slnt" 0;
+
+    /* padding-top: 75px; /* because of the fixed navbar*/
 }
 
 /* START GENERAL */
 
 .bg-main-dark {
-    background-color: #312f7f !important;
+    background-color: #2f3380 !important;
     /* background-color: #123b51 !important; */
 }
 .bg-main {
@@ -89,6 +92,16 @@ body  {
     color: #fff;
     transform: translateY(-2px);
 }
+.btn-main-dark {
+    background: #31A6D9;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+.btn-main-dark:hover {
+    background: #303180;
+    color: #fff;
+    transform: translateY(-2px);
+}
 .btn-outline-main {
     color: #303180;
     border-color: #303180;
@@ -107,7 +120,7 @@ body  {
 .navbar {
     /* background: rgb(62,171,226);
     background: linear-gradient(90deg, rgba(62,171,226,0.751313025210084) 1%, rgba(50,60,137,1) 69%, rgba(49,47,127,1) 82%); */
-    background: #312f7f;
+    background: #2f3380;
 }
 .navbar .navbar-nav a {
     transition: all 0.3s ease-in-out;
@@ -176,8 +189,8 @@ body  {
 .tabs-section .tab_2 .card:hover {
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .25) !important;
 }
-.tabs-section .blog_tab .card,
-.blogs_section .blog {
+.tabs-section .blog,
+.blogs_section .blog .noooooooo {
     background: rgb(255,255,255);
     background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(62,171,226,0.16867997198879547) 49%, rgba(235,121,227,0.12106092436974791) 90%, rgba(255,255,255,1) 100%);
 }
@@ -255,7 +268,7 @@ body  {
 
 /* START footer */
 footer {
-    background-color: #312f7f;
+    background-color: #2f3380;
     /* background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1014%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(49%2c 47%2c 127%2c 1)'%3e%3c/rect%3e%3cpath d='M1488 560L0 560 L0 334.33Q49.58 263.91%2c 120 313.49Q212.02 285.51%2c 240 377.54Q259.37 324.91%2c 312 344.28Q359.62 271.9%2c 432 319.52Q489.79 305.31%2c 504 363.1Q524.55 311.65%2c 576 332.2Q642.1 278.29%2c 696 344.39Q720.02 296.41%2c 768 320.44Q785.93 266.38%2c 840 284.31Q882.4 254.72%2c 912 297.12Q985.56 250.69%2c 1032 324.25Q1079.38 299.63%2c 1104 347.01Q1132.44 255.45%2c 1224 283.89Q1267.03 254.92%2c 1296 297.95Q1340.13 270.07%2c 1368 314.2Q1438.78 264.98%2c 1488 335.76z' fill='rgba(49%2c 47%2c 127%2c 1)'%3e%3c/path%3e%3cpath d='M1536 560L0 560 L0 359.04Q102.26 341.3%2c 120 443.56Q152.78 356.34%2c 240 389.11Q308.29 337.4%2c 360 405.7Q412.29 385.99%2c 432 438.27Q463.01 349.28%2c 552 380.3Q601.78 310.08%2c 672 359.86Q763.95 331.81%2c 792 423.77Q858.87 370.64%2c 912 437.51Q959.4 364.91%2c 1032 412.31Q1045.83 354.14%2c 1104 367.97Q1174.72 318.69%2c 1224 389.41Q1270.8 364.21%2c 1296 411Q1374.32 369.31%2c 1416 447.63Q1428.71 340.34%2c 1536 353.04z' fill='rgba(64%2c 61%2c 155%2c 1)'%3e%3c/path%3e%3cpath d='M1512 560L0 560 L0 464.3Q58.5 402.81%2c 120 461.31Q190.35 411.66%2c 240 482.01Q252 422.01%2c 312 434.02Q387.95 389.97%2c 432 465.91Q505.34 419.25%2c 552 492.59Q563.4 432%2c 624 443.4Q690.66 390.06%2c 744 456.72Q816.94 409.67%2c 864 482.61Q894.06 392.67%2c 984 422.72Q1035.24 401.96%2c 1056 453.2Q1121.88 399.09%2c 1176 464.97Q1244.78 413.75%2c 1296 482.52Q1311.35 425.87%2c 1368 441.21Q1412.18 413.39%2c 1440 457.58Q1461.94 407.52%2c 1512 429.47z' fill='rgba(53%2c 108%2c 177%2c 1)'%3e%3c/path%3e%3cpath d='M1488 560L0 560 L0 510.64Q64.32 454.96%2c 120 519.29Q193.24 472.53%2c 240 545.77Q273.1 458.87%2c 360 491.96Q405.27 465.23%2c 432 510.5Q506.7 465.2%2c 552 539.9Q618.3 486.2%2c 672 552.5Q695.95 504.45%2c 744 528.41Q789.94 454.35%2c 864 500.29Q963.92 480.21%2c 984 580.13Q1002.07 526.2%2c 1056 544.28Q1107.81 476.09%2c 1176 527.89Q1262.1 493.99%2c 1296 580.08Q1314.13 526.22%2c 1368 544.35Q1436.49 492.85%2c 1488 561.34z' fill='rgba(62%2c 171%2c 226%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1014'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
     background-size: cover;
     background-position: bottom; */
@@ -506,3 +519,30 @@ footer .links:nth-child(3) h5:after {
     background-color: #27e77d;
     color: #000;
 }
+
+
+/* SEARCH BAR */
+.main_search .btn-toggle {
+/* Unchecked state (transparent) */
+    background-color: transparent;
+    color: #2f3380; /* for example, primary color text */
+    border: 1px solid #2f3380;
+    transition: all 0.2s ease-in-out;
+}
+
+.main_search .btn-toggle:hover {
+/* You can decide if you want a hover effect or keep it transparent */
+    background-color: #e6f0ff; /* a very light shade of blue on hover, or remove this */
+}
+
+.main_search .btn-check:checked + .btn-toggle {
+/* Checked state (solid background) */
+    background-color: #2f3380;
+    border-color: #2f3380;
+    color: #fff;
+}
+.main_search input::placeholder {
+    font-size: 1rem;
+}
+
+/* SEARCH BAR */
