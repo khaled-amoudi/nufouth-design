@@ -104,10 +104,25 @@
             </div>
         </nav>
 
-        <section class="units_search pt-5 mt-5">
+        <section class="units_search pt-5 mt-5 position-relative">
+            <div class="bg-blob position-absolute d-none d-md-block" style="right: 0%; top: 15%; z-index: 9999">
+                <img src="images/blobs/blob5.svg" width="260px" height="260px" class="blob-graph" alt="" />
+            </div>
+            <div class="bg-blob position-absolute d-none d-md-block" style="right: 80%; top: 10%; z-index: 9999">
+                <img src="images/blobs/blob5.svg" width="260px" height="260px" class="blob-graph" alt="" />
+            </div>
             <div>
                 <section class="main_search mt-3">
                     <div class="container">
+                        <div class="d-flex flex-wrap mb-2 mb-sm-4">
+                            <button class="btn fs-8 mx-1 mb-1 btn-sm btn-main rounded-main">عرض الكل</button>
+                            <button class="btn fs-8 mx-1 mb-1 btn-sm btn-outline-main rounded-main">وحدات سكنية للايجار</button>
+                            <button class="btn fs-8 mx-1 mb-1 btn-sm btn-outline-main rounded-main">وحدات تجارية للايجار</button>
+                            <button class="btn fs-8 mx-1 mb-1 btn-sm btn-outline-main rounded-main">إستراحات ومباني وأراضي للإيجار</button>
+                            <button class="btn fs-8 mx-1 mb-1 btn-sm btn-outline-main rounded-main">عروض البيع</button>
+                            <button class="btn fs-8 mx-1 mb-1 btn-sm btn-main rounded-main">تصدير العروض المتاحة PDF</button>
+                            <button class="btn fs-8 mx-1 mb-1 btn-sm btn-main rounded-main">طلبك غير موجود؟ اطلبه الآن</button>
+                        </div>
                         <div class="row justify-content-center">
                             <div class="container">
                                 <div class="card p-3 border-0 shadow rounded-main">
@@ -1470,19 +1485,19 @@
                         <div class="row">
                             <div class="col-12 col-sm-6 mb-3">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control border-info" id="floatingInputGrid" placeholder="الإسم" style="border-radius: 15px" value="" />
-                                    <label for="floatingInputGrid" class="text-main fs-7">الإسم</label>
+                                    <input type="text" class="form-control border-main" id="floatingInputGrid" placeholder="الإسم" style="border-radius: 15px" value="" />
+                                    <label for="floatingInputGrid" class="text-main-dark fs-7">الإسم</label>
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6 mb-3">
                                 <div class="form-floating">
-                                    <input type="mobile" class="form-control border-info" id="floatingInputGrid" placeholder="الهاتف" style="border-radius: 15px" value="" />
-                                    <label for="floatingInputGrid" class="text-main fs-7">الهاتف</label>
+                                    <input type="mobile" class="form-control border-main" id="floatingInputGrid" placeholder="الهاتف" style="border-radius: 15px" value="" />
+                                    <label for="floatingInputGrid" class="text-main-dark fs-7">الهاتف</label>
                                 </div>
                             </div>
                             <div class="col-12 mb-3">
                                 <div class="form-floating">
-                                    <select class="form-select border-info" id="floatingSelectGrid" aria-label="نوع الطلب" style="border-radius: 15px">
+                                    <select class="form-select border-main" id="floatingSelectGrid" aria-label="نوع الطلب" style="border-radius: 15px">
                                         <option value=""></option>
                                         <option value="1">طلب شاغر</option>
                                         <option value="2">طلب خدمة</option>
@@ -1490,13 +1505,13 @@
                                         <option value="4">شكوى</option>
                                         <option value="5">أخرى..</option>
                                     </select>
-                                    <label for="floatingSelectGrid" class="text-main fs-7">نوع الطلب</label>
+                                    <label for="floatingSelectGrid" class="text-main-dark fs-7">نوع الطلب</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating mb-3">
-                                    <textarea class="form-control border-info" placeholder="التفاصيل" id="floatingTextarea2" style="height: 100px; border-radius: 15px"></textarea>
-                                    <label for="floatingTextarea2" class="text-main fs-7">التفاصيل</label>
+                                    <textarea class="form-control border-main" placeholder="التفاصيل" id="floatingTextarea2" style="height: 100px; border-radius: 15px"></textarea>
+                                    <label for="floatingTextarea2" class="text-main-dark fs-7">التفاصيل</label>
                                 </div>
                             </div>
                             <div class="col-12 d-flex justify-content-center">

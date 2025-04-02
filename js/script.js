@@ -23,7 +23,7 @@ $(document).ready(function () {
 
 
 
-    var owl = $('.owl-carousel');
+    var owl = $('.owl2-carousel');
     owl.owlCarousel({
         items: 4,
         loop: true,

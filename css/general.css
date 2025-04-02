@@ -112,6 +112,9 @@ body  {
     border-color: #303180;
 }
 
+.border-main {
+    border-color: #303180 !important;
+}
 /* END GENERAL */
 
 
