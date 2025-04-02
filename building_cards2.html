@@ -105,14 +105,14 @@
         </nav>
 
         <section class="units_search pt-5 mt-5">
-            <div class="row">
+            <div>
                 <section class="main_search mt-3">
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="container">
                                 <div class="card p-3 border-0 shadow rounded-main">
                                     <div class="row g-3 align-items-center">
-                                        <div class="col-6 col-md-2">
+                                        <div class="col-12 col-sm-6 col-md-2">
                                             <div class="btn-group w-100" role="group" aria-label="Checkbox button group">
                                                 <input type="checkbox" class="btn-check" id="option1" autocomplete="off" data-label-default="ايجار" data-label-checked="ايجار ✅" />
                                                 <label class="w-50 text-center btn-lg btn-toggle rounded-main ms-2" for="option1"> ايجار </label>
@@ -121,14 +121,14 @@
                                                 <label class="w-50 text-center btn-lg btn-toggle rounded-main" for="option2"> بيع </label>
                                             </div>
                                         </div>
-                                        <div class="col-6 col-md-3">
+                                        <div class="col-12 col-sm-6 col-md-3">
                                             <select class="form-select rounded-main" id="selectpicker1" data-live-search="true" data-clearable="true" data-searchable="true" data-no-results-text="لا يوجد نتائج" multiple>
                                                 <option value="">المدينة</option>
                                                 <option value="1">الرياض</option>
                                                 <option value="2">جدة</option>
                                             </select>
                                         </div>
-                                        <div class="col-6 col-md-3">
+                                        <div class="col-12 col-sm-6 col-md-3">
                                             <select class="form-select rounded-main" id="selectpicker2" data-live-search="true" data-clearable="true" data-searchable="true" data-no-results-text="لا يوجد نتائج" multiple>
                                                 <option value="">نوع العقار</option>
                                                 <option value="1">شقة</option>
@@ -137,7 +137,7 @@
                                                 <option value="4">فيلا</option>
                                             </select>
                                         </div>
-                                        <div class="col-6 col-md-2">
+                                        <div class="col-12 col-sm-6 col-md-2">
                                             <input type="number" class="form-control rounded-main form-control-lg" placeholder="الميزانية (بالريال السعودي)" aria-label="الميزانية" />
                                             <!-- <div class="input-group">
                                                 <input type="number" class="form-control rounded-end form-control-lg" placeholder="الميزانية" aria-label="الميزانية">
@@ -355,7 +355,7 @@
                 </div>
             </div>
             <div class="container">
-                <div class="row mb-4">
+                <div class="row g-2 g-sm-3 mb-4">
                     <div class="units_title">
                         <h5 class="fw-bolder text-main-dark my-4">
                             <!-- <i class="fa-solid fa-circle-dot"></i> -->
@@ -368,7 +368,7 @@
                             <div class="row g-0">
                                 <div class="col-md-12">
                                     <div class="position-relative rounded-top-main">
-                                        <div style="width: 100%; height: 250px">
+                                        <div class="unit_img_container" style="width: 100%; height: 250px">
                                             <img src="images/buildings/building1 (1).jpg" class="rounded-top-main" style="width: -webkit-fill-available; height: inherit" alt="..." />
                                         </div>
                                         <div class="position-absolute top-0 bottom-0 start-0 end-0 d-flex justify-content-start align-items-start">
@@ -379,7 +379,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-12 d-flex align-items-center">
-                                    <div class="card-body">
+                                    <div class="card-body p-2 p-sm-3">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="card-title">
                                                 <span class="text-green fs-4">90,000</span>
@@ -421,12 +421,12 @@
                                                     </button>
                                                 </div>
                                                 <div>
-                                                    <button class="btn btn-sm btn-outline-main fs-8"><i class="fa-solid fa-location-dot mx-2"></i> معاينة على الخريطة</button>
+                                                    <button class="btn btn-sm btn-outline-main fs-8"><i class="fa-solid fa-location-dot mx-0 mx-sm-2"></i> معاينة على الخريطة</button>
                                                 </div>
                                             </div>
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <button class="btn btn-outline-main rounded-main w-50 px-2 px-sm-4 mt-3 fs-7 ms-2" data-bs-toggle="modal" data-bs-target="#detailsModal">التفاصيل</button>
-                                                <button class="btn btn-main rounded-main w-50 px-2 px-sm-4 mt-3 fs-7" data-bs-toggle="modal" data-bs-target="#bookNowModal">
+                                            <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center">
+                                                <button class="btn btn-outline-main rounded-main w-100 w-sm-50 px-2 px-sm-4 mt-3 fs-7 ms-0 ms-sm-2" data-bs-toggle="modal" data-bs-target="#detailsModal">التفاصيل</button>
+                                                <button class="btn btn-main rounded-main w-100 w-sm-50 px-2 px-sm-4 mt-1 mt-sm-3 fs-7" data-bs-toggle="modal" data-bs-target="#bookNowModal">
                                                     <i class="fa-solid fa-rocket fs-7 ms-1"></i>
                                                     احجز الآن
                                                 </button>
@@ -442,7 +442,7 @@
                             <div class="row g-0">
                                 <div class="col-md-12">
                                     <div class="position-relative rounded-top-main">
-                                        <div style="width: 100%; height: 250px">
+                                        <div class="unit_img_container" style="width: 100%; height: 250px">
                                             <img src="images/buildings/building1 (2).jpg" class="rounded-top-main" style="width: -webkit-fill-available; height: inherit" alt="..." />
                                         </div>
                                         <div class="position-absolute top-0 bottom-0 start-0 end-0 d-flex justify-content-start align-items-start">
@@ -453,7 +453,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-12 d-flex align-items-center">
-                                    <div class="card-body">
+                                    <div class="card-body p-2 p-sm-3">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="card-title">
                                                 <span class="text-green fs-4">90,000</span>
@@ -495,12 +495,12 @@
                                                     </button>
                                                 </div>
                                                 <div>
-                                                    <button class="btn btn-sm btn-outline-main fs-8"><i class="fa-solid fa-location-dot mx-2"></i> معاينة على الخريطة</button>
+                                                    <button class="btn btn-sm btn-outline-main fs-8"><i class="fa-solid fa-location-dot mx-0 mx-sm-2"></i> معاينة على الخريطة</button>
                                                 </div>
                                             </div>
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <button class="btn btn-outline-main rounded-main w-50 px-2 px-sm-4 mt-3 fs-7 ms-2" data-bs-toggle="modal" data-bs-target="#detailsModal">التفاصيل</button>
-                                                <button class="btn btn-main rounded-main w-50 px-2 px-sm-4 mt-3 fs-7" data-bs-toggle="modal" data-bs-target="#bookNowModal">
+                                            <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center">
+                                                <button class="btn btn-outline-main rounded-main w-100 w-sm-50 px-2 px-sm-4 mt-3 fs-7 ms-0 ms-sm-2" data-bs-toggle="modal" data-bs-target="#detailsModal">التفاصيل</button>
+                                                <button class="btn btn-main rounded-main w-100 w-sm-50 px-2 px-sm-4 mt-1 mt-sm-3 fs-7" data-bs-toggle="modal" data-bs-target="#bookNowModal">
                                                     <i class="fa-solid fa-rocket fs-7 ms-1"></i>
                                                     احجز الآن
                                                 </button>
@@ -516,7 +516,7 @@
                             <div class="row g-0">
                                 <div class="col-md-12">
                                     <div class="position-relative rounded-top-main">
-                                        <div style="width: 100%; height: 250px">
+                                        <div class="unit_img_container" style="width: 100%; height: 250px">
                                             <img src="images/buildings/building1 (3).jpg" class="rounded-top-main" style="width: -webkit-fill-available; height: inherit" alt="..." />
                                         </div>
                                         <div class="position-absolute top-0 bottom-0 start-0 end-0 d-flex justify-content-start align-items-start">
@@ -527,7 +527,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-12 d-flex align-items-center">
-                                    <div class="card-body">
+                                    <div class="card-body p-2 p-sm-3">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="card-title">
                                                 <span class="text-green fs-4">90,000</span>
@@ -569,12 +569,12 @@
                                                     </button>
                                                 </div>
                                                 <div>
-                                                    <button class="btn btn-sm btn-outline-main fs-8"><i class="fa-solid fa-location-dot mx-2"></i> معاينة على الخريطة</button>
+                                                    <button class="btn btn-sm btn-outline-main fs-8"><i class="fa-solid fa-location-dot mx-0 mx-sm-2"></i> معاينة على الخريطة</button>
                                                 </div>
                                             </div>
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <button class="btn btn-outline-main rounded-main w-50 px-2 px-sm-4 mt-3 fs-7 ms-2" data-bs-toggle="modal" data-bs-target="#detailsModal">التفاصيل</button>
-                                                <button class="btn btn-main rounded-main w-50 px-2 px-sm-4 mt-3 fs-7" data-bs-toggle="modal" data-bs-target="#bookNowModal">
+                                            <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center">
+                                                <button class="btn btn-outline-main rounded-main w-100 w-sm-50 px-2 px-sm-4 mt-3 fs-7 ms-0 ms-sm-2" data-bs-toggle="modal" data-bs-target="#detailsModal">التفاصيل</button>
+                                                <button class="btn btn-main rounded-main w-100 w-sm-50 px-2 px-sm-4 mt-1 mt-sm-3 fs-7" data-bs-toggle="modal" data-bs-target="#bookNowModal">
                                                     <i class="fa-solid fa-rocket fs-7 ms-1"></i>
                                                     احجز الآن
                                                 </button>
@@ -587,7 +587,7 @@
                     </div>
                 </div>
 
-                <div class="row mb-4">
+                <div class="row g-2 g-sm-3 mb-4">
                     <div class="units_title">
                         <h5 class="fw-bolder text-main-dark my-4">
                             <!-- <i class="fa-solid fa-circle-dot"></i> -->
@@ -600,7 +600,7 @@
                             <div class="row g-0">
                                 <div class="col-md-12">
                                     <div class="position-relative rounded-top-main">
-                                        <div style="width: 100%; height: 250px">
+                                        <div class="unit_img_container" style="width: 100%; height: 250px">
                                             <img src="images/buildings/building1 (4).jpg" class="rounded-top-main" style="width: -webkit-fill-available; height: inherit" alt="..." />
                                         </div>
                                         <div class="position-absolute top-0 bottom-0 start-0 end-0 d-flex justify-content-start align-items-start">
@@ -611,7 +611,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-12 d-flex align-items-center">
-                                    <div class="card-body">
+                                    <div class="card-body p-2 p-sm-3">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="card-title">
                                                 <span class="text-green fs-4">90,000</span>
@@ -653,12 +653,12 @@
                                                     </button>
                                                 </div>
                                                 <div>
-                                                    <button class="btn btn-sm btn-outline-main fs-8"><i class="fa-solid fa-location-dot mx-2"></i> معاينة على الخريطة</button>
+                                                    <button class="btn btn-sm btn-outline-main fs-8"><i class="fa-solid fa-location-dot mx-0 mx-sm-2"></i> معاينة على الخريطة</button>
                                                 </div>
                                             </div>
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <button class="btn btn-outline-main rounded-main w-50 px-2 px-sm-4 mt-3 fs-7 ms-2" data-bs-toggle="modal" data-bs-target="#detailsModal">التفاصيل</button>
-                                                <button class="btn btn-main rounded-main w-50 px-2 px-sm-4 mt-3 fs-7" data-bs-toggle="modal" data-bs-target="#bookNowModal">
+                                            <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center">
+                                                <button class="btn btn-outline-main rounded-main w-100 w-sm-50 px-2 px-sm-4 mt-3 fs-7 ms-0 ms-sm-2" data-bs-toggle="modal" data-bs-target="#detailsModal">التفاصيل</button>
+                                                <button class="btn btn-main rounded-main w-100 w-sm-50 px-2 px-sm-4 mt-1 mt-sm-3 fs-7" data-bs-toggle="modal" data-bs-target="#bookNowModal">
                                                     <i class="fa-solid fa-rocket fs-7 ms-1"></i>
                                                     احجز الآن
                                                 </button>
@@ -674,7 +674,7 @@
                             <div class="row g-0">
                                 <div class="col-md-12">
                                     <div class="position-relative rounded-top-main">
-                                        <div style="width: 100%; height: 250px">
+                                        <div class="unit_img_container" style="width: 100%; height: 250px">
                                             <img src="images/buildings/building1 (5).jpg" class="rounded-top-main" style="width: -webkit-fill-available; height: inherit" alt="..." />
                                         </div>
                                         <div class="position-absolute top-0 bottom-0 start-0 end-0 d-flex justify-content-start align-items-start">
@@ -688,7 +688,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-12 d-flex align-items-center">
-                                    <div class="card-body">
+                                    <div class="card-body p-2 p-sm-3">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="card-title">
                                                 <span class="text-green fs-4">90,000</span>
@@ -730,12 +730,12 @@
                                                     </button>
                                                 </div>
                                                 <div>
-                                                    <button class="btn btn-sm btn-outline-main fs-8"><i class="fa-solid fa-location-dot mx-2"></i> معاينة على الخريطة</button>
+                                                    <button class="btn btn-sm btn-outline-main fs-8"><i class="fa-solid fa-location-dot mx-0 mx-sm-2"></i> معاينة على الخريطة</button>
                                                 </div>
                                             </div>
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <button class="btn btn-outline-main rounded-main w-50 px-2 px-sm-4 mt-3 fs-7 ms-2" data-bs-toggle="modal" data-bs-target="#detailsModal">التفاصيل</button>
-                                                <button class="btn btn-main rounded-main w-50 px-2 px-sm-4 mt-3 fs-7" data-bs-toggle="modal" data-bs-target="#bookNowModal">
+                                            <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center">
+                                                <button class="btn btn-outline-main rounded-main w-100 w-sm-50 px-2 px-sm-4 mt-3 fs-7 ms-0 ms-sm-2" data-bs-toggle="modal" data-bs-target="#detailsModal">التفاصيل</button>
+                                                <button class="btn btn-main rounded-main w-100 w-sm-50 px-2 px-sm-4 mt-1 mt-sm-3 fs-7" data-bs-toggle="modal" data-bs-target="#bookNowModal">
                                                     <i class="fa-solid fa-rocket fs-7 ms-1"></i>
                                                     احجز الآن
                                                 </button>
@@ -751,7 +751,7 @@
                             <div class="row g-0">
                                 <div class="col-md-12">
                                     <div class="position-relative rounded-top-main">
-                                        <div style="width: 100%; height: 250px">
+                                        <div class="unit_img_container" style="width: 100%; height: 250px">
                                             <img src="images/buildings/building1 (6).jpg" class="rounded-top-main" style="width: -webkit-fill-available; height: inherit" alt="..." />
                                         </div>
                                         <div class="position-absolute top-0 bottom-0 start-0 end-0 d-flex justify-content-start align-items-start">
@@ -762,7 +762,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-12 d-flex align-items-center">
-                                    <div class="card-body">
+                                    <div class="card-body p-2 p-sm-3">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="card-title">
                                                 <span class="text-green fs-4">90,000</span>
@@ -804,12 +804,12 @@
                                                     </button>
                                                 </div>
                                                 <div>
-                                                    <button class="btn btn-sm btn-outline-main fs-8"><i class="fa-solid fa-location-dot mx-2"></i> معاينة على الخريطة</button>
+                                                    <button class="btn btn-sm btn-outline-main fs-8"><i class="fa-solid fa-location-dot mx-0 mx-sm-2"></i> معاينة على الخريطة</button>
                                                 </div>
                                             </div>
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <button class="btn btn-outline-main rounded-main w-50 px-2 px-sm-4 mt-3 fs-7 ms-2" data-bs-toggle="modal" data-bs-target="#detailsModal">التفاصيل</button>
-                                                <button class="btn btn-main rounded-main w-50 px-2 px-sm-4 mt-3 fs-7" data-bs-toggle="modal" data-bs-target="#bookNowModal">
+                                            <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center">
+                                                <button class="btn btn-outline-main rounded-main w-100 w-sm-50 px-2 px-sm-4 mt-3 fs-7 ms-0 ms-sm-2" data-bs-toggle="modal" data-bs-target="#detailsModal">التفاصيل</button>
+                                                <button class="btn btn-main rounded-main w-100 w-sm-50 px-2 px-sm-4 mt-1 mt-sm-3 fs-7" data-bs-toggle="modal" data-bs-target="#bookNowModal">
                                                     <i class="fa-solid fa-rocket fs-7 ms-1"></i>
                                                     احجز الآن
                                                 </button>
@@ -825,7 +825,7 @@
                             <div class="row g-0">
                                 <div class="col-md-12">
                                     <div class="position-relative rounded-top-main">
-                                        <div style="width: 100%; height: 250px">
+                                        <div class="unit_img_container" style="width: 100%; height: 250px">
                                             <img src="images/buildings/building1 (3).jpg" class="rounded-top-main" style="width: -webkit-fill-available; height: inherit" alt="..." />
                                         </div>
                                         <div class="position-absolute top-0 bottom-0 start-0 end-0 d-flex justify-content-start align-items-start">
@@ -839,7 +839,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-12 d-flex align-items-center">
-                                    <div class="card-body">
+                                    <div class="card-body p-2 p-sm-3">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="card-title">
                                                 <span class="text-green fs-4">90,000</span>
@@ -881,12 +881,12 @@
                                                     </button>
                                                 </div>
                                                 <div>
-                                                    <button class="btn btn-sm btn-outline-main fs-8"><i class="fa-solid fa-location-dot mx-2"></i> معاينة على الخريطة</button>
+                                                    <button class="btn btn-sm btn-outline-main fs-8"><i class="fa-solid fa-location-dot mx-0 mx-sm-2"></i> معاينة على الخريطة</button>
                                                 </div>
                                             </div>
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <button class="btn btn-outline-main rounded-main w-50 px-2 px-sm-4 mt-3 fs-7 ms-2" data-bs-toggle="modal" data-bs-target="#detailsModal">التفاصيل</button>
-                                                <button class="btn btn-main rounded-main w-50 px-2 px-sm-4 mt-3 fs-7" data-bs-toggle="modal" data-bs-target="#bookNowModal">
+                                            <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center">
+                                                <button class="btn btn-outline-main rounded-main w-100 w-sm-50 px-2 px-sm-4 mt-3 fs-7 ms-0 ms-sm-2" data-bs-toggle="modal" data-bs-target="#detailsModal">التفاصيل</button>
+                                                <button class="btn btn-main rounded-main w-100 w-sm-50 px-2 px-sm-4 mt-1 mt-sm-3 fs-7" data-bs-toggle="modal" data-bs-target="#bookNowModal">
                                                     <i class="fa-solid fa-rocket fs-7 ms-1"></i>
                                                     احجز الآن
                                                 </button>
@@ -902,7 +902,7 @@
                             <div class="row g-0">
                                 <div class="col-md-12">
                                     <div class="position-relative rounded-top-main">
-                                        <div style="width: 100%; height: 250px">
+                                        <div class="unit_img_container" style="width: 100%; height: 250px">
                                             <img src="images/buildings/building1 (1).jpg" class="rounded-top-main" style="width: -webkit-fill-available; height: inherit" alt="..." />
                                         </div>
                                         <div class="position-absolute top-0 bottom-0 start-0 end-0 d-flex justify-content-start align-items-start">
@@ -913,7 +913,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-12 d-flex align-items-center">
-                                    <div class="card-body">
+                                    <div class="card-body p-2 p-sm-3">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="card-title">
                                                 <span class="text-green fs-4">90,000</span>
@@ -955,12 +955,12 @@
                                                     </button>
                                                 </div>
                                                 <div>
-                                                    <button class="btn btn-sm btn-outline-main fs-8"><i class="fa-solid fa-location-dot mx-2"></i> معاينة على الخريطة</button>
+                                                    <button class="btn btn-sm btn-outline-main fs-8"><i class="fa-solid fa-location-dot mx-0 mx-sm-2"></i> معاينة على الخريطة</button>
                                                 </div>
                                             </div>
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <button class="btn btn-outline-main rounded-main w-50 px-2 px-sm-4 mt-3 fs-7 ms-2" data-bs-toggle="modal" data-bs-target="#detailsModal">التفاصيل</button>
-                                                <button class="btn btn-main rounded-main w-50 px-2 px-sm-4 mt-3 fs-7" data-bs-toggle="modal" data-bs-target="#bookNowModal">
+                                            <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center">
+                                                <button class="btn btn-outline-main rounded-main w-100 w-sm-50 px-2 px-sm-4 mt-3 fs-7 ms-0 ms-sm-2" data-bs-toggle="modal" data-bs-target="#detailsModal">التفاصيل</button>
+                                                <button class="btn btn-main rounded-main w-100 w-sm-50 px-2 px-sm-4 mt-1 mt-sm-3 fs-7" data-bs-toggle="modal" data-bs-target="#bookNowModal">
                                                     <i class="fa-solid fa-rocket fs-7 ms-1"></i>
                                                     احجز الآن
                                                 </button>
@@ -976,7 +976,7 @@
                             <div class="row g-0">
                                 <div class="col-md-12">
                                     <div class="position-relative rounded-top-main">
-                                        <div style="width: 100%; height: 250px">
+                                        <div class="unit_img_container" style="width: 100%; height: 250px">
                                             <img src="images/buildings/building1 (2).jpg" class="rounded-top-main" style="width: -webkit-fill-available; height: inherit" alt="..." />
                                         </div>
                                         <div class="position-absolute top-0 bottom-0 start-0 end-0 d-flex justify-content-start align-items-start">
@@ -990,7 +990,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-12 d-flex align-items-center">
-                                    <div class="card-body">
+                                    <div class="card-body p-2 p-sm-3">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="card-title">
                                                 <span class="text-green fs-4">90,000</span>
@@ -1032,12 +1032,12 @@
                                                     </button>
                                                 </div>
                                                 <div>
-                                                    <button class="btn btn-sm btn-outline-main fs-8"><i class="fa-solid fa-location-dot mx-2"></i> معاينة على الخريطة</button>
+                                                    <button class="btn btn-sm btn-outline-main fs-8"><i class="fa-solid fa-location-dot mx-0 mx-sm-2"></i> معاينة على الخريطة</button>
                                                 </div>
                                             </div>
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <button class="btn btn-outline-main rounded-main w-50 px-2 px-sm-4 mt-3 fs-7 ms-2" data-bs-toggle="modal" data-bs-target="#detailsModal">التفاصيل</button>
-                                                <button class="btn btn-main rounded-main w-50 px-2 px-sm-4 mt-3 fs-7" data-bs-toggle="modal" data-bs-target="#bookNowModal">
+                                            <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center">
+                                                <button class="btn btn-outline-main rounded-main w-100 w-sm-50 px-2 px-sm-4 mt-3 fs-7 ms-0 ms-sm-2" data-bs-toggle="modal" data-bs-target="#detailsModal">التفاصيل</button>
+                                                <button class="btn btn-main rounded-main w-100 w-sm-50 px-2 px-sm-4 mt-1 mt-sm-3 fs-7" data-bs-toggle="modal" data-bs-target="#bookNowModal">
                                                     <i class="fa-solid fa-rocket fs-7 ms-1"></i>
                                                     احجز الآن
                                                 </button>
@@ -1107,21 +1107,21 @@
                                                     <div class="col-3 d-flex justify-content-center">
                                                         <div class="card border-0 bg-transparent w-100 cursor-pointer">
                                                             <div class="card-body px-md-4 d-flex justify-content-center align-items-center">
-                                                                <img src="https://res.cloudinary.com/vistaprint/images/c_scale,w_248,h_248,dpr_1.5/f_auto,q_auto/v1705580331/ideas-and-advice-prod/en-us/kool-aid/kool-aid.jpg?_i=AA" style="max-width: 200px; max-height: 200px" alt="" />
+                                                                <img src="images/partners/1.jpg" style="max-width: 200px; max-height: 200px" alt="" />
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-3 d-flex justify-content-center">
                                                         <div class="card border-0 bg-transparent w-100 cursor-pointer">
                                                             <div class="card-body px-md-4 d-flex justify-content-center align-items-center">
-                                                                <img src="https://res.cloudinary.com/vistaprint/images/c_scale,w_248,h_248,dpr_1.5/f_auto,q_auto/v1705580340/ideas-and-advice-prod/en-us/bp/bp.png?_i=AA" style="max-width: 200px; max-height: 200px" alt="" />
+                                                                <img src="images/partners/2.jpg" style="max-width: 200px; max-height: 200px" alt="" />
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-3 d-flex justify-content-center">
                                                         <div class="card border-0 bg-transparent w-100 cursor-pointer">
                                                             <div class="card-body px-md-4 d-flex justify-content-center align-items-center">
-                                                                <img src="https://res.cloudinary.com/vistaprint/images/c_scale,w_248,h_248,dpr_1.5/f_auto,q_auto/v1705580322/ideas-and-advice-prod/en-us/twitter/twitter.png?_i=AA" style="max-width: 200px; max-height: 200px" alt="" />
+                                                                <img src="images/partners/3.jpg" style="max-width: 200px; max-height: 200px" alt="" />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1129,7 +1129,7 @@
                                                         <div class="card border-0 bg-transparent w-100 cursor-pointer">
                                                             <div class="card-body px-md-4 d-flex justify-content-center align-items-center">
                                                                 <img
-                                                                    src="https://res.cloudinary.com/vistaprint/images/c_scale,w_248,h_248,dpr_1.5/f_auto,q_auto/v1705580325/ideas-and-advice-prod/en-us/target_142183cd7b8/target_142183cd7b8.png?_i=AA"
+                                                                    src="images/partners/4.jpg"
                                                                     style="max-width: 200px; max-height: 200px"
                                                                     alt=""
                                                                 />
@@ -1144,7 +1144,7 @@
                                                         <div class="card border-0 bg-transparent w-100 cursor-pointer">
                                                             <div class="card-body px-md-4 d-flex justify-content-center align-items-center">
                                                                 <img
-                                                                    src="https://res.cloudinary.com/vistaprint/images/c_scale,w_248,h_248,dpr_1.5/f_auto,q_auto/v1705580342/ideas-and-advice-prod/en-us/apple_1421283652a/apple_1421283652a.png?_i=AA"
+                                                                    src="images/partners/5.jpg"
                                                                     style="max-width: 200px; max-height: 200px"
                                                                     alt=""
                                                                 />
@@ -1155,7 +1155,7 @@
                                                         <div class="card border-0 bg-transparent w-100 cursor-pointer">
                                                             <div class="card-body px-md-4 d-flex justify-content-center align-items-center">
                                                                 <img
-                                                                    src="https://res.cloudinary.com/vistaprint/images/c_scale,w_248,h_248,dpr_1.5/f_auto,q_auto/v1705580337/ideas-and-advice-prod/en-us/google_142143109e8/google_142143109e8.png?_i=AA"
+                                                                    src="images/partners/6.jpg"
                                                                     style="max-width: 200px; max-height: 200px"
                                                                     alt=""
                                                                 />
@@ -1165,14 +1165,14 @@
                                                     <div class="col-3 d-flex justify-content-center">
                                                         <div class="card border-0 bg-transparent w-100 cursor-pointer">
                                                             <div class="card-body px-md-4 d-flex justify-content-center align-items-center">
-                                                                <img src="https://res.cloudinary.com/vistaprint/images/c_scale,w_248,h_248,dpr_1.5/f_auto,q_auto/v1705580338/ideas-and-advice-prod/en-us/coca-cola/coca-cola.png?_i=AA" style="max-width: 200px; max-height: 200px" alt="" />
+                                                                <img src="images/partners/7.jpg" style="max-width: 200px; max-height: 200px" alt="" />
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-3 d-flex justify-content-center">
                                                         <div class="card border-0 bg-transparent w-100 cursor-pointer">
                                                             <div class="card-body px-md-4 d-flex justify-content-center align-items-center">
-                                                                <img src="https://res.cloudinary.com/vistaprint/images/c_scale,w_248,h_248,dpr_1.5/f_auto,q_auto/v1705580321/ideas-and-advice-prod/en-us/visa/visa.png?_i=AA" style="max-width: 200px; max-height: 200px" alt="" />
+                                                                <img src="images/partners/8.jpg" style="max-width: 200px; max-height: 200px" alt="" />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1211,7 +1211,7 @@
                                     <div class="col-6 col-sm-4">
                                         <div class="card border-0 pb-3 shadow cursor-pointer">
                                             <div class="card-body d-flex flex-column align-items-center">
-                                                <div class="w-50 p-4">
+                                                <div class="w-50 p-0 p-sm-4">
                                                     <img src="images/icon-services/building.gif" class="w-100" alt="" />
                                                 </div>
                                                 <div class="mt-2 text-center">
@@ -1223,7 +1223,7 @@
                                     <div class="col-6 col-sm-4">
                                         <div class="card border-0 pb-3 shadow cursor-pointer">
                                             <div class="card-body d-flex flex-column align-items-center">
-                                                <div class="w-50 p-4">
+                                                <div class="w-50 p-0 p-sm-4">
                                                     <img src="images/icon-services/scales.gif" class="w-100" alt="" />
                                                 </div>
                                                 <div class="mt-2 text-center">
@@ -1235,7 +1235,7 @@
                                     <div class="col-6 col-sm-4">
                                         <div class="card border-0 pb-3 shadow cursor-pointer">
                                             <div class="card-body d-flex flex-column align-items-center">
-                                                <div class="w-50 p-4">
+                                                <div class="w-50 p-0 p-sm-4">
                                                     <img src="images/icon-services/promotion.gif" class="w-100" alt="" />
                                                 </div>
                                                 <div class="mt-2 text-center">
@@ -1247,7 +1247,7 @@
                                     <div class="col-6 col-sm-4">
                                         <div class="card border-0 pb-3 shadow cursor-pointer">
                                             <div class="card-body d-flex flex-column align-items-center">
-                                                <div class="w-50 p-4">
+                                                <div class="w-50 p-0 p-sm-4">
                                                     <img src="images/icon-services/legal.gif" class="w-100" alt="" />
                                                 </div>
                                                 <div class="mt-2 text-center">
@@ -1259,7 +1259,7 @@
                                     <div class="col-6 col-sm-4">
                                         <div class="card border-0 pb-3 shadow cursor-pointer">
                                             <div class="card-body d-flex flex-column align-items-center">
-                                                <div class="w-50 p-4">
+                                                <div class="w-50 p-0 p-sm-4">
                                                     <img src="images/icon-services/strategy.gif" class="w-100" alt="" />
                                                 </div>
                                                 <div class="mt-2 text-center">
@@ -1271,7 +1271,7 @@
                                     <div class="col-6 col-sm-4">
                                         <div class="card border-0 pb-3 shadow cursor-pointer">
                                             <div class="card-body d-flex flex-column align-items-center">
-                                                <div class="w-50 p-4">
+                                                <div class="w-50 p-0 p-sm-4">
                                                     <img src="images/icon-services/tax.gif" class="w-100" alt="" />
                                                 </div>
                                                 <div class="mt-2 text-center">

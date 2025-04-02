@@ -19,4 +19,45 @@ $(document).ready(function () {
         e.preventDefault(); // Prevent any default action (if used in anchor)
         $('html, body').animate({ scrollTop: 0 }, 'smooth');
     });
+
+
+
+
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+        items: 4,
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        autoplayTimeout: 1000,
+        autoplayHoverPause: true
+    });
+    $('.play').on('click', function () {
+        owl.trigger('play.owl.autoplay', [1000])
+    })
+    $('.stop').on('click', function () {
+        owl.trigger('stop.owl.autoplay')
+    })
+    // // Owl Carousel
+    // $('.owl-carousel').owlCarousel({
+    //     loop:true,
+    //     margin:10,
+    //     responsiveClass:true,
+    //     responsive:{
+    //         0:{
+    //             items:2,
+    //             nav:true
+    //         },
+    //         600:{
+    //             items:3,
+    //             nav:false
+    //         },
+    //         1000:{
+    //             items:4,
+    //             nav:true,
+    //             loop:true
+    //         }
+    //     }
+    // })
+
 });
