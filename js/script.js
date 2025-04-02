@@ -23,41 +23,93 @@ $(document).ready(function () {
 
 
 
-    var owl = $('.owl2-carousel');
-    owl.owlCarousel({
-        items: 4,
-        loop: true,
-        margin: 10,
-        autoplay: true,
-        autoplayTimeout: 1000,
-        autoplayHoverPause: true
-    });
-    $('.play').on('click', function () {
-        owl.trigger('play.owl.autoplay', [1000])
-    })
-    $('.stop').on('click', function () {
-        owl.trigger('stop.owl.autoplay')
-    })
-    // // Owl Carousel
-    // $('.owl-carousel').owlCarousel({
-    //     loop:true,
-    //     margin:10,
-    //     responsiveClass:true,
-    //     responsive:{
-    //         0:{
-    //             items:2,
-    //             nav:true
-    //         },
-    //         600:{
-    //             items:3,
-    //             nav:false
-    //         },
-    //         1000:{
-    //             items:4,
-    //             nav:true,
-    //             loop:true
-    //         }
-    //     }
-    // })
 
+});
+
+
+const swiper = new Swiper(".swiper", {
+    // Optional parameters
+    direction: "horizontal",
+    loop: true,
+    grabCursor: true,
+    autoplay: {
+        delay: 1000,
+    },
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+            slidesPerView: 3,
+            spaceBetween: 20
+        },
+        // when window width is >= 480px
+        480: {
+            slidesPerView: 4,
+            spaceBetween: 30
+        },
+        // when window width is >= 640px
+        640: {
+            slidesPerView: 6,
+            spaceBetween: 40
+        }
+    },
+    // If we need pagination
+    // pagination: {
+    //     el: ".swiper-pagination",
+    // },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+
+    // And if we need scrollbar
+    // scrollbar: {
+    //     el: ".swiper-scrollbar",
+    // },
+});
+
+
+
+
+const swiper2 = new Swiper(".swiper2", {
+    // Optional parameters
+    direction: "horizontal",
+    loop: true,
+    grabCursor: true,
+    autoplay: {
+        delay: 3000,
+    },
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 20
+        },
+        // when window width is >= 480px
+        480: {
+            slidesPerView: 2,
+            spaceBetween: 30
+        },
+        // when window width is >= 640px
+        640: {
+            slidesPerView: 3,
+            spaceBetween: 40
+        }
+    },
+    // If we need pagination
+    // pagination: {
+    //     el: ".swiper-pagination",
+    // },
+
+    // Navigation arrows
+    // navigation: {
+    //     nextEl: ".swiper-button-next",
+    //     prevEl: ".swiper-button-prev",
+    // },
+
+    // And if we need scrollbar
+    // scrollbar: {
+    //     el: ".swiper-scrollbar",
+    // },
 });
