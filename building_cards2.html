@@ -25,6 +25,31 @@
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
       rel="stylesheet"
     /> -->
+
+        <style>
+            /* Custom styles for the modal Swipers */
+            .myModalSwiperMain {
+                width: 80%;
+                height: 300px; /* Adjust to your preference */
+                margin-bottom: 10px;
+            }
+            .myModalSwiperThumbs {
+                width: 80%;
+                height: 50px; /* Thumbs row height */
+            }
+            /* .myModalSwiperThumbs .swiper-wrapper {
+                display: flex;
+                justify-content: center;
+            } */
+            /* Ensure images fit well */
+            .myModalSwiperMain .swiper-slide img,
+            .myModalSwiperThumbs .swiper-slide img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+        </style>
     </head>
     <body>
         <!-- Whatsapp Button -->
@@ -359,14 +384,262 @@
 
             <!-- Details MODAL -->
             <div class="modal fade" id="detailsModal" tabindex="-1" aria-labelledby="detailsModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                <div class="modal-dialog modal-xl" role="document">
                     <div class="modal-content rounded-main">
                         <div class="modal-header border-0">
-                            <h5 class="modal-title text-main-dark fs-5 text-shadow" id="detailsModalLabel">تفاصيل البطاقة</h5>
+                            <h5 class="modal-title text-main-dark fw-bolder fs-6 text-shadow" id="detailsModalLabel">
+                                <i class="fa-solid fa-info-circle me-2 text-main-dark fs-6 ms-2"></i>
+                                تفاصيل البطاقة
+                            </h5>
                             <button type="button" class="btn-close ms-0" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body border-0">
-                            <div class="row g-0"></div>
+                            <ul class="nav nav-pills justify-content-center mb-3" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link text-main-dark fs-7 fw-bolder active" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab" aria-controls="tab1" aria-selected="true">
+                                        <img src="images/icons/icon-home.png" class="ms-2" width="20px" alt="" />
+                                        الوحدات الشاغرة
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link text-main-dark fs-7 fw-bolder" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab" aria-controls="tab2" aria-selected="false">
+                                        <img src="images/icons/icon-info.png" class="ms-2" width="20px" alt="" />
+                                        مواصفات العقار
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link text-main-dark fs-7 fw-bolder" id="tab3-tab" data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab" aria-controls="tab3" aria-selected="false">
+                                        <img src="images/icons/icon-star.png" class="ms-2" width="20px" alt="" />
+                                        مميزات العقار
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link text-main-dark fs-7 fw-bolder" id="tab4-tab" data-bs-toggle="tab" data-bs-target="#tab4" type="button" role="tab" aria-controls="tab4" aria-selected="false">
+                                        <img src="images/icons/icon-images.png" class="ms-2" width="20px" alt="" />
+                                        صور العقار
+                                    </button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+                                    <div class="py-3 px-5">
+                                        <h6 class="fs-6 text-main-dark">الوحدات الشاغرة</h6>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+                                    <div class="py-3 px-5">
+                                        <div class="row row-cols-3 row-cols-sm-4 row-cols-md-5 g-3">
+                                            <div class="col">
+                                                <div class="card rounded-main border-0 shadow cursor-pointer h-100">
+                                                    <div class="card-body">
+                                                        <h6 class="fw-bold text-secondary-700">كود العقار</h6>
+                                                        <p class="mb-0 fw-bolder">1400</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="card rounded-main border-0 shadow cursor-pointer h-100">
+                                                    <div class="card-body">
+                                                        <h6 class="fw-bold text-secondary-700">نوع العقار</h6>
+                                                        <p class="mb-0 fw-bolder">سكني</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="card rounded-main border-0 shadow cursor-pointer h-100">
+                                                    <div class="card-body">
+                                                        <h6 class="fw-bold text-secondary-700">مساحة العقار</h6>
+                                                        <p class="mb-0 fw-bolder">600 م<sup>2</sup></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="card rounded-main border-0 shadow cursor-pointer h-100">
+                                                    <div class="card-body">
+                                                        <h6 class="fw-bold text-secondary-700">المدينة</h6>
+                                                        <p class="mb-0 fw-bolder">الرياض</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="card rounded-main border-0 shadow cursor-pointer h-100">
+                                                    <div class="card-body">
+                                                        <h6 class="fw-bold text-secondary-700">الحي</h6>
+                                                        <p class="mb-0 fw-bolder">حي الربيع</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="card rounded-main border-0 shadow cursor-pointer h-100">
+                                                    <div class="card-body">
+                                                        <h6 class="fw-bold text-secondary-700">الشارع</h6>
+                                                        <p class="mb-0 fw-bolder">الفياضة</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="card rounded-main border-0 shadow cursor-pointer h-100">
+                                                    <div class="card-body">
+                                                        <h6 class="fw-bold text-secondary-700">عمر العقار</h6>
+                                                        <p class="mb-0 fw-bolder">3 سنوات</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="card rounded-main border-0 shadow cursor-pointer h-100">
+                                                    <div class="card-body">
+                                                        <h6 class="fw-bold text-secondary-700">واجهة العقار</h6>
+                                                        <p class="mb-0 fw-bolder">غرب</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="card rounded-main border-0 shadow cursor-pointer h-100">
+                                                    <div class="card-body">
+                                                        <h6 class="fw-bold text-secondary-700">عرض الشارع</h6>
+                                                        <p class="mb-0 fw-bolder">15 م</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="card rounded-main border-0 shadow cursor-pointer h-100">
+                                                    <div class="card-body">
+                                                        <h6 class="fw-bold text-secondary-700">عدد الأدوار</h6>
+                                                        <p class="mb-0 fw-bolder">3</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="card rounded-main border-0 shadow cursor-pointer h-100">
+                                                    <div class="card-body">
+                                                        <h6 class="fw-bold text-secondary-700">عدد الشقق</h6>
+                                                        <p class="mb-0 fw-bolder">0</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="card rounded-main border-0 shadow cursor-pointer h-100">
+                                                    <div class="card-body">
+                                                        <h6 class="fw-bold text-secondary-700">عدد المعارض</h6>
+                                                        <p class="mb-0 fw-bolder">0</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="card rounded-main border-0 shadow cursor-pointer h-100">
+                                                    <div class="card-body">
+                                                        <h6 class="fw-bold text-secondary-700">التواصل</h6>
+                                                        <p class="mb-0 fw-bolder">
+                                                            <i class="fa-brands fa-whatsapp text-success fs-5 ms-2"></i>
+                                                            966505500128
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
+                                    <div class="py-3 px-5">
+                                        <div class="row g-3">
+                                            <!-- Card: الخدمات -->
+                                            <div class="col-md-4">
+                                                <div class="card shadow-sm rounded-main h-100">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title fw-bold mb-3">الخدمات</h5>
+                                                        <div class="d-flex flex-wrap gap-2">
+                                                            <span class="badge bg-main rounded-main p-2">انترنت فايبر</span>
+                                                            <span class="badge bg-main rounded-main p-2">انترنت فايبر</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card: المرافق -->
+                                            <div class="col-md-4">
+                                                <div class="card shadow-sm rounded-main h-100">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title fw-bold mb-3">المرافق</h5>
+                                                        <div class="d-flex flex-wrap gap-2">
+                                                            <span class="badge bg-main rounded-main p-2">توفير مواقف</span>
+                                                            <span class="badge bg-main rounded-main p-2">مصعد حديث</span>
+                                                            <span class="badge bg-main rounded-main p-2">عمال نظافة</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Card: المميزات -->
+                                            <div class="col-md-4">
+                                                <div class="card shadow-sm rounded-main h-100">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title fw-bold mb-3">المميزات</h5>
+                                                        <div class="d-flex flex-wrap gap-2">
+                                                            <span class="badge bg-main rounded-main p-2">الواجهة حجر</span>
+                                                            <span class="badge bg-main rounded-main p-2">إطلالة رائعة</span>
+                                                            <span class="badge bg-main rounded-main p-2">حديقة أطفال</span>
+                                                            <span class="badge bg-main rounded-main p-2">سور عالي</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Card for معلومات المنطقة -->
+                                        <div class="row mt-3">
+                                            <div class="col-12">
+                                                <div class="card shadow-sm rounded-main">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title fw-bold">معلومات المنطقة</h5>
+                                                        <p class="mt-3 text-muted">يقع المبنى في الجزء الشمالي لمدينة الرياض بحي الربيع، ويتميز الموقع بأنه متوسط جميع الخدمات. ويعتبر قريب للمطار الملك خالد وكذلك جامعة الأمام… (نص توضيحي طويل حول المنطقة).</p>
+                                                        <p class="text-muted">كما يتميز الموقع بقربه من المراكز التجارية مثل الرياض بارك، تال مول، ومستشفى المملكة… إلخ. (يمكنك إضافة مزيد من التفصيل هنا أو تقسيم النص إلى فقرات).</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="tab4-tab">
+                                    <div class="py-3 px-5">
+                                        <!-- Main Slider -->
+                                        <div class="swiper myModalSwiperMain" id="modalSwiperMain">
+                                            <div class="swiper-wrapper">
+                                                <!-- Slides (large images) -->
+                                                <div class="swiper-slide">
+                                                    <img src="https://picsum.photos/id/1015/800/600" alt="Slide 1" />
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="https://picsum.photos/id/1018/800/600" alt="Slide 2" />
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="https://picsum.photos/id/1024/800/600" alt="Slide 3" />
+                                                </div>
+                                                <!-- Add as many slides as you like -->
+                                            </div>
+                                            <!-- Optionally, add arrows or pagination if you want -->
+                                            <div class="swiper-button-next"></div>
+                                            <div class="swiper-button-prev"></div>
+                                        </div>
+
+                                        <!-- Thumbnails Slider -->
+                                        <div class="swiper myModalSwiperThumbs" id="modalSwiperThumbs">
+                                            <div class="swiper-wrapper">
+                                                <!-- Slides (thumbnail images) -->
+                                                <div class="swiper-slide">
+                                                    <img src="https://picsum.photos/id/1015/100/80" alt="Thumb 1" />
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="https://picsum.photos/id/1018/100/80" alt="Thumb 2" />
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="https://picsum.photos/id/1024/100/80" alt="Thumb 3" />
+                                                </div>
+                                                <!-- More thumbs as needed -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -374,7 +647,7 @@
             <div class="container">
                 <div class="row g-2 g-sm-3 mb-4">
                     <div class="units_title">
-                        <h5 class="fw-bolder text-main-dark my-4">
+                        <h5 class="fw-bolder text-main-dark text-shadow my-4">
                             <!-- <i class="fa-solid fa-circle-dot"></i> -->
                             <img src="images/logo-icon.png" width="17px" alt="" />
                             شقق للإيجار
@@ -606,7 +879,7 @@
 
                 <div class="row g-2 g-sm-3 mb-4">
                     <div class="units_title">
-                        <h5 class="fw-bolder text-main-dark my-4">
+                        <h5 class="fw-bolder text-main-dark text-shadow my-4">
                             <!-- <i class="fa-solid fa-circle-dot"></i> -->
                             <img src="images/logo-icon.png" width="17px" alt="" />
                             شقق للبيع
@@ -1120,34 +1393,34 @@
                                     <div class="swiper">
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide d-flex align-items-center">
-                                                <img src="images/partners/1.jpg" width="100%" alt="">
+                                                <img src="images/partners/1.jpg" width="100%" alt="" />
                                             </div>
                                             <div class="swiper-slide d-flex align-items-center">
-                                                <img src="images/partners/3.jpg" width="100%" alt="">
+                                                <img src="images/partners/3.jpg" width="100%" alt="" />
                                             </div>
                                             <div class="swiper-slide d-flex align-items-center">
-                                                <img src="images/partners/3.png" width="100%" alt="">
+                                                <img src="images/partners/3.png" width="100%" alt="" />
                                             </div>
                                             <div class="swiper-slide d-flex align-items-center">
-                                                <img src="images/partners/4.jpg" width="100%" alt="">
+                                                <img src="images/partners/4.jpg" width="100%" alt="" />
                                             </div>
                                             <div class="swiper-slide d-flex align-items-center">
-                                                <img src="images/partners/5.jpg" width="100%" alt="">
+                                                <img src="images/partners/5.jpg" width="100%" alt="" />
                                             </div>
                                             <div class="swiper-slide d-flex align-items-center">
-                                                <img src="images/partners/6.png" width="100%" alt="">
+                                                <img src="images/partners/6.png" width="100%" alt="" />
                                             </div>
                                             <div class="swiper-slide d-flex align-items-center">
-                                                <img src="images/partners/7.png" width="100%" alt="">
+                                                <img src="images/partners/7.png" width="100%" alt="" />
                                             </div>
                                             <div class="swiper-slide d-flex align-items-center">
-                                                <img src="images/partners/8.png" width="100%" alt="">
+                                                <img src="images/partners/8.png" width="100%" alt="" />
                                             </div>
                                             <div class="swiper-slide d-flex align-items-center">
-                                                <img src="images/partners/1.jpg" width="100%" alt="">
+                                                <img src="images/partners/1.jpg" width="100%" alt="" />
                                             </div>
                                             <div class="swiper-slide d-flex align-items-center">
-                                                <img src="images/partners/2.jpg" width="100%" alt="">
+                                                <img src="images/partners/2.jpg" width="100%" alt="" />
                                             </div>
                                         </div>
                                         <!-- <div class="swiper-pagination"></div> -->
@@ -1273,7 +1546,7 @@
                                         </div>
                                     </div>
                                     <div class="d-flex justify-content-center">
-                                        <button class="main_button mt-5 text-white fw-bold" role="button">عرض المزيد</button>
+                                        <a href="blogs.html" class="main_button mt-5 text-white fw-bold" role="button">عرض المزيد</a>
                                     </div>
                                 </div>
                             </div>
@@ -1283,41 +1556,40 @@
                                     <div class="swiper">
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide d-flex align-items-center">
-                                                <img src="images/partners/1.jpg" width="100%" alt="">
+                                                <img src="images/partners/1.jpg" width="100%" alt="" />
                                             </div>
                                             <div class="swiper-slide d-flex align-items-center">
-                                                <img src="images/partners/3.jpg" width="100%" alt="">
+                                                <img src="images/partners/3.jpg" width="100%" alt="" />
                                             </div>
                                             <div class="swiper-slide d-flex align-items-center">
-                                                <img src="images/partners/3.png" width="100%" alt="">
+                                                <img src="images/partners/3.png" width="100%" alt="" />
                                             </div>
                                             <div class="swiper-slide d-flex align-items-center">
-                                                <img src="images/partners/4.jpg" width="100%" alt="">
+                                                <img src="images/partners/4.jpg" width="100%" alt="" />
                                             </div>
                                             <div class="swiper-slide d-flex align-items-center">
-                                                <img src="images/partners/5.jpg" width="100%" alt="">
+                                                <img src="images/partners/5.jpg" width="100%" alt="" />
                                             </div>
                                             <div class="swiper-slide d-flex align-items-center">
-                                                <img src="images/partners/6.png" width="100%" alt="">
+                                                <img src="images/partners/6.png" width="100%" alt="" />
                                             </div>
                                             <div class="swiper-slide d-flex align-items-center">
-                                                <img src="images/partners/7.png" width="100%" alt="">
+                                                <img src="images/partners/7.png" width="100%" alt="" />
                                             </div>
                                             <div class="swiper-slide d-flex align-items-center">
-                                                <img src="images/partners/8.png" width="100%" alt="">
+                                                <img src="images/partners/8.png" width="100%" alt="" />
                                             </div>
                                             <div class="swiper-slide d-flex align-items-center">
-                                                <img src="images/partners/1.jpg" width="100%" alt="">
+                                                <img src="images/partners/1.jpg" width="100%" alt="" />
                                             </div>
                                             <div class="swiper-slide d-flex align-items-center">
-                                                <img src="images/partners/2.jpg" width="100%" alt="">
+                                                <img src="images/partners/2.jpg" width="100%" alt="" />
                                             </div>
                                         </div>
                                         <div class="swiper-button-prev"></div>
                                         <div class="swiper-button-next"></div>
                                     </div>
                                 </div>
-
 
                                 <div class="row py-4">
                                     <h5 class="text-center fw-bold text-main-dark">آراء العملاء</h5>
@@ -1588,17 +1860,26 @@
                                 <div class="links col-6 col-lg-3">
                                     <h5 class="text-white mb-3">روابط مهمة</h5>
                                     <ul class="list-unstyled text-white pe-2">
-                                        <li class="mb-1">- سياسة الخصوصية</li>
-                                        <li class="mb-1">- الشروط والأحكام</li>
-                                        <li class="mb-1">- تعرف على نفوذي للتطوير</li>
+                                        <li class="mb-1"><a href="page1.html" class="text-white text-decoration-none fs-7">
+                                          <i class="fa-solid fa-arrow-left ms-1 fs-8"></i>
+                                          سياسة الخصوصية
+                                        </a></li>
+                                        <li class="mb-1"><a href="page2.html" class="text-white text-decoration-none fs-7">
+                                          <i class="fa-solid fa-arrow-left ms-1 fs-8"></i>
+                                          الشروط والأحكام
+                                        </a></li>
+                                        <li class="mb-1"><a href="page3.html" class="text-white text-decoration-none fs-7">
+                                          <i class="fa-solid fa-arrow-left ms-1 fs-8"></i>
+                                          تعرف على نفوذي للتطوير
+                                        </a></li>
                                     </ul>
                                 </div>
                                 <div class="links col-6 col-lg-3">
                                     <h5 class="text-white mb-3">خدماتنا</h5>
                                     <ul class="list-unstyled text-white pe-2">
-                                        <li class="mb-1">- إدارة عقارات</li>
-                                        <li class="mb-1">- تأجير وبيع</li>
-                                        <li class="mb-1">- تسويق</li>
+                                        <li class="mb-1 fs-7">إدارة عقارات</li>
+                                        <li class="mb-1 fs-7">تأجير وبيع</li>
+                                        <li class="mb-1 fs-7">تسويق</li>
                                     </ul>
                                 </div>
                                 <div class="links col-6 col-lg-3">
@@ -1672,6 +1953,29 @@
                             label.textContent = defaultText;
                         }
                     });
+                });
+            });
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                // 1) Thumbs slider
+                var thumbsSwiper = new Swiper(".myModalSwiperThumbs", {
+                    spaceBetween: 10,
+                    slidesPerView: 4, // how many thumbnails to show at once
+                    freeMode: true, // allows momentum scrolling
+                    watchSlidesProgress: true, // needed so main slider can track thumbs
+                });
+
+                // 2) Main slider
+                var mainSwiper = new Swiper(".myModalSwiperMain", {
+                    spaceBetween: 10,
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    thumbs: {
+                        swiper: thumbsSwiper, // link to the thumbs slider
+                    },
                 });
             });
         </script>

@@ -549,3 +549,15 @@ footer .links:nth-child(3) h5:after {
 }
 
 /* SEARCH BAR */
+
+
+
+
+#detailsModal .nav-item button {
+    border-radius: 50px;
+}
+#detailsModal .nav-item button.active {
+    background-color: #303180 !important;
+    color: #fff !important;
+    border-radius: 50px;
+}
