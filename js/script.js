@@ -20,10 +20,6 @@ $(document).ready(function () {
         $('html, body').animate({ scrollTop: 0 }, 'smooth');
     });
 
-
-
-
-
 });
 
 
@@ -125,4 +121,18 @@ const swiper2 = new Swiper(".swiper2", {
     // scrollbar: {
     //     el: ".swiper-scrollbar",
     // },
+});
+
+
+
+
+
+const allSkeleton = document.querySelectorAll(".__skeleton");
+
+window.addEventListener("load", function () {
+  /* setTimeout(function () { */
+    allSkeleton.forEach((item) => {
+      item.classList.remove("__skeleton");
+    });
+  /* }, 2000); */
 });
